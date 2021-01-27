@@ -11,6 +11,10 @@ html, body {
   padding: .8rem;
   background-color: white;
 }
+.navbar-nav {
+  float: center;
+  text-align: center;
+}
 .navbar-nav li {
   padding-right: 20px;
   background-color: white;
@@ -19,10 +23,20 @@ html, body {
   font-size: 1.2em !important;
   background-color: white;
 }
+.navbar-toggler {
+  border: white;
+}
 .carousel-inner img {
-  padding-top: 100px;
-  width: 50%;
-  height: 50%;
+  padding-top: 50px;
+  padding-right: 350px;
+  padding-left: 350px;
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 65%;
+  transform: translateY(50%);
 }
 .btn-primary {
   background-color: white;
@@ -37,34 +51,64 @@ html, body {
 }
 .fa-instagram {
   color: #222;
+  font-size: 1.2em;
 }
 .fa-twitter {
   color: #222;
-}
-.row {
-  padding-top: 100px;
+  font-size: 1.2em;
 }
 .heading {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
 .controls {
   align-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
-  padding: 10px;
+  width: 50%;
+}
+.row {
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
-
+  .carousel-caption {
+    top: 70%;
+  }
+  .carousel-inner img {
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  .heading {
+    padding-top: 50px;
+  }
 }
 @media (max-width: 768px) {
-  
+  .carousel-caption {
+    top: 65%;
+  }
+  .carousel-inner img {
+    padding-top: 100px;
+  }
 }
 @media (max-width: 576px) {
-  
+  .carousel-caption {
+    top: 40%;
+    font-size: 90%;
+  }
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 10px 10px;
+  }
+  .carousel-inner img {
+    padding-top: 100px;
+  }
 }
 
 
