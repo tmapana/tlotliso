@@ -53,34 +53,29 @@
 
 
 <!-- Contact Form -->
-<form id="contact-form" method="post" role="form" action="mailto:tlotlisomapana@gmail.com" enctype="text/plain" onsubmit="location.href='thankyou.html';">
+<div class="controls">
 
-    <div class="controls">
+    <form id="contact-form" method="post" action="contact-form.php" enctype="text/plain">
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="form-group">
-                    <input type="text" name="first-name" class="form-control" value="" placeholder="first name" required="required" maxlength="100" data-error="please enter name">
+                    <input type="text" name="name" class="form-control" value="" placeholder="your name" required="required" maxlength="200" data-error="please enter name">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" name="last-name" class="form-control" value="" placeholder="last name" required="required" maxlength="100" data-error="please enter last name">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
+            
         </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <input id="form_email" type="email" name="email" class="form-control" value="" placeholder="email" required="required" maxlength="100" data-error="please enter email">
+                    <input id="email" type="email" name="email" class="form-control" value="" placeholder="your email" required="required" maxlength="100" data-error="please enter email">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <input id="form_phone" type="tel" name="phone" class="form-control" value="" placeholder="phone" required="required" maxlength="100" data-error="please enter phone number">
+                    <input id="phone" type="tel" name="phone" class="form-control" value="" placeholder="012 345 6789" required="required" maxlength="100" data-error="please enter phone number">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -93,15 +88,16 @@
                 </div>
             </div>
             <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-outline-black btn-lrg" onclick="location.replace('thankyou.html')">contact me</button>
+                <button type="submit" name="submit" class="btn btn-outline-black btn-lrg" >contact me</button>
+                <!--<input type="submit" name="submit" value="contact me">-->
             </div>
         </div>
-    </div>
+    </form>
 
-</form>
+</div>
 
 
-<!--- Footer -->
+<!-- Footer -->
 <footer>
     <p>
         
@@ -113,7 +109,7 @@
 				<a href="https://www.twitter.com/t_spana"><i class="fab fa-twitter"></i></a>
 			</div>
 			<div class="col-12">
-				<p>2021 &copy; tlotliso.</p>
+				<p>Copyright &copy; 2021 tlotliso.com All rights reserved.</p>
 			</div>
 		</div>
 	</div>
