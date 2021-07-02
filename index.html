@@ -3,18 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>tlotliso | photography</title>
+	<title>tlotliso.com | photography</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/main.js"></script>
 
 	<!-- icons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 </head>
 
@@ -22,7 +23,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top" style="background-color: white;"> 
 	<div class="container-fluid" style="background-color: white;">
-		<a class="navbar-brand" href="index.html">tlotliso.</a>
+		<a class="navbar-brand" href="index.html">tlotliso</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -32,13 +33,13 @@
 					<a class="nav-link" href="index.html">home</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#">work</a>
+					<a class="nav-link" href="src/work.html">work</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="about.html">about</a>
+					<a class="nav-link" href="src/about.html">about</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="contact.html">contact&#43</a>
+					<a class="nav-link" href="src/contact.html">contact&#43</a>
 				</li>
 			</ul>
 		</div>
@@ -54,22 +55,16 @@
 	</ul>
 	<div class="carousel-inner text-center">
 		<div class="carousel-item active">
-			<img src="img/DSC_0593.jpg">
-			<div class="carousel-caption">
+			<img src="img/uploads/DSC_0593.jpg">
+			<!--<div class="carousel-caption">
 				<button type="button" class="btn btn-outline-light btn-lrg">+more work</button>
-			</div>
+			</div>-->
 		</div>
 		<div class="carousel-item">
-			<img src="img/Clifton-9.jpg">
-			<div class="carousel-caption">
-				<button type="button" class="btn btn-outline-light btn-lrg">+more work</button>
-			</div>
+			<img src="img/uploads/Clifton-9.jpg">
 		</div>
 		<div class="carousel-item">
-			<img src="img/DSC_0075.jpg">
-			<div class="carousel-caption">
-				<button type="button" class="btn btn-outline-light btn-lrg">+more work</button>
-			</div>
+			<img src="img/uploads/DSC_0075.jpg">
 		</div>
 	</div>
 </div>
@@ -86,7 +81,11 @@
 				<a href="https://www.twitter.com/t_spana"><i class="fab fa-twitter"></i></a>
 			</div>
 			<div class="col-12">
-				<p>Copyright &copy; 2021 tlotliso.com All rights reserved.</p>
+				<p>
+					tlotliso.com
+					&copy;
+					<script type="text/javascript">document.write(new Date().getFullYear());</script>
+				</p>
 			</div>
 		</div>
 	</div>

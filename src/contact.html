@@ -3,36 +3,37 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>contact | tlotliso</title>
+    <title>contact me | tlotliso</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="js/main.js"></script>
 
-    <!-- icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+	<!-- icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+	<link rel="manifest" href="../site.webmanifest">
 </head>
 
 <body>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top" style="background-color: white;"> 
 	<div class="container-fluid" style="background-color: white;">
-		<a class="navbar-brand" href="index.html">tlotliso.</a>
+		<a class="navbar-brand" href="../index.html">tlotliso</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive" style="background-color: white;">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="index.html">home</a>
+					<a class="nav-link" href="../index.html">home</a>
 				</li>
 				<li class="nav-item active">
-					<a class="nav-link" href="#">work</a>
+					<a class="nav-link" href="work.html">work</a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="about.html">about</a>
@@ -48,14 +49,14 @@
 
 <!-- Heading -->
 <div class="container-fluid text-center">
-    <h3 class="heading">get in touch</h3>
+    <h3 class="heading">send me an email and let's work!</h3>
 </div>
 
 
 <!-- Contact Form -->
 <div class="controls">
-
-    <form id="contact-form" method="post" action="contact-form.php" enctype="text/plain">
+    <!--
+    <form id="contact-form" method="POST" class="form" action="contact.php" enctype="text/plain">
 
         <div class="row">
             <div class="col-md-12">
@@ -69,13 +70,13 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <input id="email" type="email" name="email" class="form-control" value="" placeholder="your email" required="required" maxlength="100" data-error="please enter email">
+                    <input id="email" type="email" name="email" class="form-control" value="" placeholder="your email address" required="required" maxlength="100" data-error="please enter email">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <input id="phone" type="tel" name="phone" class="form-control" value="" placeholder="012 345 6789" required="required" maxlength="100" data-error="please enter phone number">
+                    <input id="phone" type="tel" name="phone" class="form-control" value="" placeholder="your phone number (optional)" maxlength="100" data-error="please enter phone number">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -83,23 +84,28 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <textarea id="form_message" name="message" class="form-control" placeholder="write me a message" rows="4"></textarea>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="write me a message..." rows="4"></textarea>
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-12 text-center">
                 <button type="submit" name="submit" class="btn btn-outline-black btn-lrg" >contact me</button>
-                <!--<input type="submit" name="submit" value="contact me">-->
             </div>
         </div>
     </form>
+    -->
+    <div class="row text-center">
+        <div class="col-12 social padding" style="letter-spacing: 20px;">
+            <a href="mailto:tlotlisomapana@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </div>
 
 </div>
 
 
-<!-- Footer -->
+<!--- Footer -->
 <footer>
-    <p>
+	<p>
         
     </p>
 	<div class="container-fluid padding">
@@ -109,11 +115,16 @@
 				<a href="https://www.twitter.com/t_spana"><i class="fab fa-twitter"></i></a>
 			</div>
 			<div class="col-12">
-				<p>Copyright &copy; 2021 tlotliso.com All rights reserved.</p>
+				<p>
+					tlotliso.com
+					&copy;
+					<script type="text/javascript">document.write(new Date().getFullYear());</script>
+				</p>
 			</div>
 		</div>
 	</div>
 </footer>
+
 </body>
 
 </html>

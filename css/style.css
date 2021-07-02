@@ -57,6 +57,10 @@ html, body {
   color: #222;
   font-size: 1.2em;
 }
+.fa-envelope{
+  color: #222;
+  font-size: 4.8em;
+}
 .heading {
   padding-top: 100px;
   padding-bottom: 20px;
